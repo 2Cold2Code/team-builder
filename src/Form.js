@@ -39,7 +39,6 @@ function Form(props) {
         
       <label htmlFor='email'>
           Email:
-      
       </label>
       <input 
         name={props.team.email} 
