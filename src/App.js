@@ -12,12 +12,15 @@ function App() {
       role: '',
     }
   ]);
-
-  const addMember = (member) => setTeamList({...teamList, member}) 
+console.log('This is before addMember() ', teamList)
+const addMember = (member) => {
+  setTeamList({...teamList, member})
+  console.log('This is teamList in addMember(): ', teamList)
+} 
 
   return (
     <div className='App'>
-      <Form team={teamList}
+      <Form teamList={teamList}
         addMember={addMember}
         setTeamList={setTeamList}/>
     </div>
